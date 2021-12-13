@@ -19,19 +19,24 @@ function getData(day, month){	//makes the API call and stores the data locally
 			console.log("Data loaded");
 		}
 	});
+
+
 	
 }
 
 
 function next(){
-
-	if(i >= xhr.response.data.length ){
-		document.getElementById("root").innerHTML = "No more matches";
+	document.getElementById("matchup").innerHTML = "Real Madrid" + "<br/>" + "VS" + "<br/>" + "PSG";
+	/*if(i >= xhr.response.data.length ){
+		document.getElementById("matchup").innerHTML = "Real Madrid" + "<br/>" + "VS" + "<br/>" + "PSG";
+		//document.getElementById("root").innerHTML = "No more matches";
 	}
 	else{
-		
-		document.getElementById("root").innerHTML = xhr.response.data[i].home_team + " - "+ xhr.response.data[i].away_team + "   Prediction:"+xhr.response.data[i].prediction;
+	     document.getElementById("matchup").innerHTML = "Real Madrid" + "<br/>" + "VS" + "<br/>" + "PSG";
+		document.getElementById("matchup").innerHTML = xhr.response.data[i].home_team + " <br/>" +" VS " + "<br/>" + xhr.response.data[i].away_team + "   Prediction:"+xhr.response.data[i].prediction;
+
 
 		i++;
 	}
+*/
 }
